@@ -1,0 +1,60 @@
+<!-- This is the HTML portion of the code related to The Psychic Game
+I have written questions in the comments that I don't know the answers to. -->
+
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tim Decilveo's Psychic Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<!-- 	<link rel="stylesheet" type="text/css" href="reset.css" /> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- 	<script type="text/javascript" src="script.js"></script> -->
+</head>
+
+<body class = "backgroundBody">
+	
+	<h1 id = "gameName"><span data-shadow-text="The Psychic Game">The Psychic Game</h1>
+	<p id = "welcomeMessage">Welcome to The Psychic Game! This game will let you know if you are able to read my mind! I hope you're quick because I'm even quicker.</p>
+	<p id = "numberGuess">Guess what number I'm thinking of by typing one of the below numbers!</p>
+
+	<!-- JavaScript/jQuery Begins -->
+
+	<div class="number-body">
+		<button id="button-0" class="btn btn-primary number" value="0">0</button>
+		<button id="button-1" class="btn btn-primary number" value="1">1</button>
+		<button id="button-2" class="btn btn-primary number" value="2">2</button>
+		<button id="button-3" class="btn btn-primary number" value="3">3</button>
+		<button id="button-4" class="btn btn-primary number" value="4">4</button>
+		<button id="button-5" class="btn btn-primary number" value="5">5</button>
+		<button id="button-6" class="btn btn-primary number" value="6">6</button>
+		<button id="button-7" class="btn btn-primary number" value="7">7</button>
+		<button id="button-8" class="btn btn-primary number" value="8">8</button>
+		<button id="button-9" class="btn btn-primary number" value="9">9</button>
+	</div>
+
+		<!-- I wasn't able to figure out the CSS portion on how to move this portion of the HTML to the next line so it isn't right next to the buttons. I used the breaks even though I know they shouldn't be in there. -->
+		<br><br><br>
+		<div class="col-lg-6">
+			<div class="panel-heading">
+				<div class="panel-title"><p>See how you've done!</p></div>
+			</div>
+			<div class="panel-body">
+				<!-- When I put the id in a div tag, I get errors. Once I put it in a separate p tag, the error goes away. Why is that? -->
+				<div class="winCount"><p id="wins">Wins <a class = "glyphicon glyphicon-plus-sign"></a> :</p></div>
+				<div class="lossCount"><p id="losses">Losses <a class = "glyphicon glyphicon-minus-sign"></a> :</p></div>
+				<div class="guessesLeftCount"><p id="guessesYouHaveLeft">Your guesses left <a class = "glyphicon glyphicon-question-sign"></a> :</p></div>
+				<div class="yourGuessesCount"><p id="yourGuesses">Look at what you've guessed!: </p></div>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	<footer class = "navbar-text">
+		<a href = "https://www.linkedin.com/in/timdecilveo/" target = "blank">Tim Decilveo © 2017 All Rights Reserved</a>
+	</footer>
+
+</body>

@@ -1,0 +1,154 @@
+/*This is the HTML portion of the code related to The Psychic Game*/
+
+
+.backgroundBody {
+	background: #9cb8b3;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*The Psychic Game*/
+/*These are the initial styling effects on the shadow*/
+span, span:after {
+	font-weight: 900;
+	color: #efedce;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	letter-spacing: .1em;
+	padding: .2em 0 .25em 0;
+	text-align: center;
+}
+
+/*This is the sizing effects on the shadow*/
+span {
+	font-size: 50px;
+	z-index: 100;
+	text-shadow: .04em .04em 0 #9cb8b3;
+	text-align: center;
+}
+
+/*This is here the shadow is created*/
+span:after {
+	content: attr(data-shadow-text);
+	color: rgba(0,0,0,.35);
+	text-shadow: none;
+	position: absolute;
+	left: .0875em;
+	top: .0875em;
+	z-index: -1;
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*This styles the numbers we are using in the game*/
+.number {
+	width: 30px;
+	height: 30px;
+	border-style: solid;
+	padding: 2px;
+	float: left;
+	margin: 2px;
+}
+
+.number-button-color {
+	color: darkcyan;
+}
+
+#display {
+	margin-top: 78px;
+	height: 500px;
+	width: 220px;
+	margin-left: 60px;
+}
+
+#buttons {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#button-0, #button-1, #button-2, #button-3, #button-4, #button-5, #button-6, #button-7, #button-8, #button-9 {
+	width: 40px;
+	height: 40px;
+	border-style: solid;
+	border-color: #2f4f4f;
+	padding: 0.4px;
+	float: left;
+	margin: 2px;
+	color: white;
+	font-size: 30px;
+	background-color: #2f4f4f;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#welcomeMessage{
+	color: #2f4f4f;
+	font-weight: bold;
+}
+
+#numberGuess{
+	color: #2f4f4f;
+	font-style: italic;
+}
+}
+
+div {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+div.panel-heading, div.panel-body{
+	left: 10px;
+}
+
+.panel-title{
+	padding-bottom: 5px;
+	position: fixed;
+	clear: both;
+}
+/*Counts*/
+
+.myGuess, .winCount, .lossCount, .guessesLeftCount, .yourGuessesCount{
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+
+/*Wins*/
+.winCount{
+	color: #006400;
+}
+
+/*Losses*/
+.lossCount{
+	color: #dc143c;
+}
+
+.guessesLeftCount, .yourGuessesCount{
+	color: 	#2f4f4f;
+}
+
+#wins, #losses, #guessesYouHaveLeft, #yourGuesses {
+	display: block;
+	width: 100%;
+	text-align: left; 
+/*	float: right;
+*/}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+footer {
+	display: block;
+	width: 100%;
+	text-align: center; 
+}
+
+@media all {
+    .page-break { display: none; }
+}
+
+/*----------------------------------------------------------------------------------------------------*/
